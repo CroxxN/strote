@@ -1,0 +1,67 @@
+/* CSS Varibles */
+
+:root{
+
+    /* Colors for light mode*/
+
+    --primary-color: #f00; /* Primary Color to be used in the whole website */
+    --secondary-color: #0f0; /* Secondary Color to be used in the whole website */
+    --helper-color: #00f; /* Helper Color to be used in the whole website */
+    --second-helper-color: #ff0; /* Second Helper Color to be used in the whole website */
+    --third-helper-color: #0ff; /* Third Helper Color to be used in the whole website */
+
+    /* Colors for dark mode */
+
+    --primary-color-dark: #f00; /* Primary dark mode Color to be used in the whole website */
+    --secondary-color-dark: #0f0; /* Secondary dark mode Color to be used in the whole website */
+    --helper-color-dark: #00f; /* Helper dark mode Color to be used in the whole website */
+    --second-helper-color-dark: #ff0; /* Second Helper dark mode Color to be used in the whole website */
+    --third-helper-color-dark: #0ff; /* Third Helper dark mode Color to be used in the whole website */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styles for the nav element */
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    top: 0;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--secondary-color-dark);
+}
+
+nav  a:hover{
+    color: white;
+}
+
+/* .heading{
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} */
