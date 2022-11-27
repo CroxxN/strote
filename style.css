@@ -19,11 +19,40 @@
     --third-helper-color-dark: #0ff; /* Third Helper dark mode Color to be used in the whole website */
 }
 
+/* Helper Classes */
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f00; /* Change the color of the link on hover */
 }
 
 /*Styles for the nav element */
@@ -57,11 +86,47 @@ nav  a:hover{
     color: white;
 }
 
-/* .heading{
+.heading{
     font-size: 2rem;
     color: #333;
     text-align: center;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-} */
+}
+
+
+/* Styles for the main element */
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: clamp(5rem, 10vw, 10rem);
+}
+
+
+
+
+.socials{
+    max-width: fit-content;
+}
+
+.socials > li {
+    margin: 0 0.5rem;
+}
+
+/* Styles for the footer */
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    background-color: black; 
+    color: white;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+}
